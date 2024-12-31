@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Connector - Amazon Clone Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="amazonlogo.png" type="image/png">
+    <style>
+                
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color:#4169E1;
+            background-color: #E0E0E0 ;
+           
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #131a22;
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .navbar p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+        .content {
+           
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 1rem;
+            max-width: 2000px;
+            margin-top: 2%;
+            margin: 1 auto;
+            justify-content: center;
+          
+        }
+        .content a {
+            text-decoration: none;
+            color: black;
+        }
+        .link-card {
+            background-color: #eff0f5;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(150, 171, 162, 0.1);
+            padding: 1.5rem;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }       
+
+        .link-card:hover {
+            transform: scale(1.2); 
+            box-shadow: 0 6px 15px rgba(150, 171, 162, 0.2);
+        }
+
+        .link-card h3 {
+            color: #0a4281;
+            margin: 0.5rem 0;
+        }
+        .link-card img {
+            max-width: 100px;
+            max-height: 100px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            z-index: 10;
+          }
+          
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1>Genie</h1>
+        <p>Welcome to the My Genie! Choose a section to explore.</p>
+        <p>Our Website Offers Multiple Sites/Services</p>
+    </header>
+    <!-- Main Content -->
+    <main class="content">
+        <a href="./amazon1/index.html" class="link-card">   
+            <img src="./1amazonlogo.png" alt="Amazon Logo">
+            <h3 style="margin-top:3px">Amazon</h3>
+            <p style="margin-top:3px">Shop with ease in our Amazon-inspired online store.</p>
+        </a>
+
+        <a href="./netfilx/index.html" class="link-card">
+            <img src="./2netfilxlogo.png" alt="Netfilx Logo">
+            <h3>NetFlix</h3>
+            <p style="color:rgb(0, 0, 0)">Enjoy unlimited movies and shows at your fingertips</p>
+        </a>
+
+        <a href="./zomato2/index.html" class="link-card">
+            <img src="./3zomatologo.png" alt="MasterClass">
+            <h3>Zomato</h3>
+            <p>Order your favorite meals from top restaurants with just a click.</p>
+        </a>
+
+        <a href="./bookmyshow/index.html" class="link-card">
+            <img src="./4bookmyshowlogo.png" alt="Index Page">
+            <h3>BookMyShow</h3>
+            <p>Discover amazing deals and a wide range of products just for you</p>
+        </a>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Amazon Clone. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

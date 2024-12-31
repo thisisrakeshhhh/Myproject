@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>HUNGRY-pluse</title>
+</head>
+<!-- header  -->
+
+<body>
+  <div class="top">
+    <nav class="navbar">
+      <div class="navbar-left d-flex justify-content-center">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active navbar-app">
+              <img src="./assets/smartphone.png" class="me-1 get-app" />Get
+              the App</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container d-flex justify-content-end me-5" id="root">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Investor Relations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Add restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login/login.html">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./registration/registration.html">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="text-center">
+      <div class="top-center">
+        <h1 class="fw-bold">Hungry+</h1>
+      </div>
+      <div class="top-center-slogon">
+        <p>Discover the best food & drinks in <strong>Delhi NCR</strong></p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="input-group fs-3 d-flex justify-content-center ">
+        <i class="fa fa-solid fa-location-dot"></i>
+        <input type="text" class="form-control px-5 bg-white" placeholder="Connaught Place, New Delhi" id="location" />
+
+        <i class="fa fa-caret-down"></i>
+
+        <i class="fa fa-solid fa-magnifying-glass"></i>
+        <!-- <img src="./assets/magnifying-glass-icon-26762.png" class="fa" height="60"> -->
+        <input type="text" class="form-control bg-white" &#f124 placeholder=" Search for restaurant, cuisine or a dish"
+          id="search" />
+      </div>
+    </div>
+  </div>
+  <div id="app"></div>
+  <!-- main section  -->
+
+  <div class="card-group">
+    <div class="cards">
+      <a href="./online-order/online-order.html" class="text-dark">
+        <img src="./assets/order online.avif" class="card-img-top" alt="Order online" />
+        <div class="card-body p-3">
+          <h5 class="card-title ms-4 p">Order Online</h5>
+          <p class="card-text ms-4">Stay home and order to your doorstep</p>
+        </div>
+      </a>
+    </div>
+    <div class="cards">
+      <a href="./dining/dining.html" class="text-dark">
+        <img src="./assets/dining.avif" class="card-img-top" alt="Order online" />
+        <div class="card-body p-3">
+          <h5 class="card-title ms-4">Dining</h5>
+          <p class="card-text ms-4">
+            View the city's favourite dining venues
+          </p>
+        </div>
+      </a>
+    </div>
+    <div class="cards">
+      <a href="./dining/dining.html" class="text-dark">
+        <img src="./assets/nightlife and clubs.avif" class="card-img-top" alt="Order online" />
+        <div class="card-body p-3">
+          <h5 class="card-title ms-4">Nightlife and Clubs</h5>
+          <p class="card-text ms-4">Stay home and</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- collection section -->
+
+  <div class="collection">
+    <h2 class="d-flex">Collections</h2>
+    <div class="d-flex justify-content-between align-items-center">
+      <p class="para text-muted">
+        Explore curated lists of top restaurants, cafes, pubs, and bars in
+        Delhi NCR, based on trends
+      </p>
+      <a href="" class="text-danger d-flex align-items-center">All collections in Delhi NCR
+        <i class="fa-solid fa-caret-right"></i>
+      </a>
+    </div>
+  </div>
+  <div class="collection-cards d-flex justify-content-center">
+    <div class="card">
+      <a href="">
+        <img src="./assets/places.avif" alt="" />
+        <div class="card-img-overlay">
+          <div class="position-absolute bottom-0 bottom-section">
+            <p class="text-white collection-para">
+              14 Places for Freedom Feastival
+            </p>
+
+            <div class="places-care text-white">
+              <h6>14 Places</h6>
+              <i class="fa-solid fa-caret-right"></i>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="./assets/unique-dining.avif" alt="" />
+        <div class="card-img-overlay">
+          <div class="position-absolute bottom-0 bottom-section">
+            <p class="text-white collection-para">
+              10 Unique Dining Experiences
+            </p>
+
+            <div class="places-care text-white">
+              <h6>10 Places</h6>
+              <i class="fa-solid fa-caret-right"></i>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="./assets/insta worthy.avif" alt="" />
+        <div class="card-img-overlay">
+          <div class="position-absolute bottom-0 bottom-section">
+            <p class="text-white collection-para">
+              21 Best Insta-worthy Places
+            </p>
+
+            <div class="places-care text-white">
+              <h6>20 Places</h6>
+              <i class="fa-solid fa-caret-right"></i>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="./assets/romantic-dining.avif" alt="" style="height: 288px" />
+        <div class="card-img-overlay">
+          <div class="position-absolute bottom-0 bottom-section">
+            <div>
+              <p class="text-white collection-para">
+                21 Romantic Dining Places
+              </p>
+
+              <div class="places-care text-white">
+                <h6>19 Places</h6>
+                <i class="fa-solid fa-caret-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- location around ncr -->
+
+  <div class="location">
+    <p class="location-para">
+      Popular localities in and around <strong>Delhi NCR</strong>
+    </p>
+
+    <div class="row localities">
+      <div class="col-4 location-places">
+        <h4>Connaught Place</h4>
+        <span class="">
+          <i class="fa fa-angle-right"></i>
+        </span>
+        <div>
+          <p class="places">257 Places</p>
+        </div>
+      </div>
+      <div class="col-4 location-places">
+        <h4>Sector 29</h4>
+        <span>
+          <i class="fa fa-angle-right"></i>
+        </span>
+        <div>
+          <p class="places">157 Places</p>
+        </div>
+      </div>
+      <div class="col-4 location-places">
+        <h4>Sector 18, Noida</h4>
+        <span>
+          <i class="fa fa-angle-right"></i>
+        </span>
+        <div>
+          <p class="places">209 Places</p>
+        </div>
+      </div>
+      <div class="col-4 location-places">
+        <h4>Rajouri Garden</h4>
+        <span>
+          <i class="fa fa-angle-right"></i>
+        </span>
+        <div>
+          <p class="places">316 Places</p>
+        </div>
+      </div>
+      <div class="col-4 location-places">
+        <h4>Saket</h4>
+        <span>
+          <i class="fa fa-angle-right"></i>
+        </span>
+        <div>
+          <p class="places">324 Places</p>
+        </div>
+      </div>
+      <div class="col-4 location-places">
+        <h4>DLF Cyber City</h4>
+        <span>
+          <i class="fa fa-angle-right"></i>
+        </span>
+        <div>
+          <p class="places">163 Places</p>
+        </div>
+      </div>
+      <div class="col-4 location-places">
+        <h4>Golf Course Road</h4>
+        <span>
+          <i class="fa fa-angle-right"></i>
+        </span>
+        <div>
+          <p class="places">157 Places</p>
+        </div>
+      </div>
+      <div class="col-4 location-places">
+        <h4>DLF Phase 4</h4>
+        <span>
+          <i class="fa fa-angle-right"></i>
+        </span>
+        <div>
+          <p class="places">221 Places</p>
+        </div>
+      </div>
+      <div class="col-4 location-places">
+        <h4>See More</h4>
+        <span>
+          <i class="fa fa-angle-down"></i>
+        </span>
+        <div>
+          <p class="places">157 Places</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- app section -->
+
+  <section class="app-section">
+    <div class="right-app-section">
+      <img src="./assets/app.avif" alt="" />
+    </div>
+    <div class="left-app-section responsive">
+      <div class="form-check">
+        <h4 class="fs-1 app-section-heading">Get the Hungry+ app</h4>
+        <p class="text-muted my-5">
+          We will send a link, open it on your phone to download <br />the app
+        </p>
+        <div class="left-app-section-form mb-3 fs-5">
+          <input type="radio" name="email" id="" checked="checked" />
+          <label for="" class="form-check-label">Email</label>
+          <input type="radio" name="email" id="" />
+          <label for="" class="form-check-label">Phone</label>
+        </div>
+        <div class="left-section-input d-flex">
+          <input type="email" name="Email" id="" placeholder="Email" class="form-control pb-3" />
+          <button class="inputBtn mx-2 btn btn-danger">Share App Link</button>
+        </div>
+        <div class="left-input-bottom mt-3">
+          <p class="text-muted">Download app from</p>
+          <a href="">
+            <img src="./assets/play-store.webp" alt="" />
+          </a>
+          <a href="">
+            <img src="./assets/ios-store.webp" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--dropdown-section  -->
+  <div class="dropdown">
+    <div class="accordion">
+      <h3 class="dropdown-heading">Explore options near me</h3>
+      <div class="contentBox">
+        <div class="label">Popular cuisines near me</div>
+        <div class="content">
+          <a href="#"> Bakery food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Beverages food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Biryani food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Burger food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Chinese food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Continental food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Desserts food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Italian food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Kebab food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Mithai food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Momos food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Mughlai food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> North Indian food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Pasta food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Pizza food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Rolls food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Sandwich food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Shake food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> South Indian food near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#"> Street food near me </a>
+        </div>
+      </div>
+      <div class="contentBox">
+        <div class="label">Popular restaurant types near me</div>
+        <div class="content">
+          <a href="#">Bakeries near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Bars near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Beverage Shops near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Bhojanalya near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Cafes near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Casual Dinig near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Clubs near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Coctail Bars near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Confectioeries near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Dessert Parlors near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Dhabas near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Fine Dining near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Food Courts near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Food Truks near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Irani cafes near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Kiosks near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Lounges near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Meat Shops near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Microbreweries near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Paan Shop near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Pubs near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">Quick Bites near me </a>
+          <i class="fa-solid fa-circle"></i>
+          <a href="#">SweeT Shops near me </a>
+        </div>
+      </div>
+      <div class="contentBox">
+        <div class="label">Top Restaurant Chains</div>
+        <div class="content chains">
+          <a href="#"> Bikanervala </a>
+          <a href="#"> Biryani Blues </a>
+          <a href="#"> BTW </a>
+          <a href="#"> Burger King </a>
+          <a href="#"> Burger Singh </a>
+          <a href="#"> Domino's </a>
+          <a href="#"> Dunkin' Donuts </a>
+          <a href="#"> Haldiram's </a>
+          <a href="#"> KFC </a>
+          <a href="#"> Krispy Kreme </a>
+          <a href="#"> McDonald's </a>
+          <a href="#"> Moti Mahal Delux </a>
+          <a href="#"> Om Sweets & Snacks </a>
+          <a href="#"> Paradise Biryani </a>
+          <a href="#"> Pizza Hut </a>
+        </div>
+      </div>
+      <div class="contentBox">
+        <div class="label">Cities We Deliver To</div>
+        <div class="content cities">
+          <a href="#"> Delhi NCR </a>
+          <a href="#"> Kolkata </a>
+          <a href="#"> Mumbai </a>
+          <a href="#"> Bengaluru </a>
+          <a href="#"> Pune </a>
+          <a href="#"> Hyderabad </a>
+          <a href="#"> Chennai </a>
+          <a href="#"> Lucknow </a>
+          <a href="#"> Kochi </a>
+          <a href="#"> Jaipur </a>
+          <a href="#"> Ahmedabad </a>
+          <a href="#"> Chandigarh </a>
+          <a href="#"> Goa </a>
+          <a href="#"> Indore </a>
+          <a href="#"> Gangtok </a>
+          <a href="#"> Nashik </a>
+          <a href="#"> Ooty </a>
+          <a href="#"> Shimla </a>
+          <a href="#"> Ludhiana </a>
+          <a href="#"> Guwahati </a>
+          <a href="#"> Amritsar </a>
+          <a href="#"> Kanpur </a>
+          <a href="#"> Allahabad </a>
+          <a href="#"> Aurangabad </a>
+          <a href="#"> Bhopa </a>
+          <a href="#"> lRanchi </a>
+          <a href="#"> Visakhapatnam </a>
+          <a href="#"> Bhubaneswar </a>
+          <a href="#"> Coimbatore </a>
+          <a href="#"> Mangalore </a>
+          <a href="#"> Vadodara </a>
+          <a href="#"> Nagpur </a>
+          <a href="#"> Agra </a>
+          <a href="#"> Dehradun </a>
+          <a href="#"> Mysore </a>
+          <a href="#"> Puducherry </a>
+          <a href="#"> Surat </a>
+          <a href="#"> Varanasi </a>
+          <a href="#"> Patna </a>
+          <a href="#"> Udaipur </a>
+          <a href="#"> Srinagar </a>
+          <a href="#"> Khajuraho </a>
+          <a href="#"> Neemrana </a>
+          <a href="#"> Cuttack </a>
+          <a href="#"> Trivandrum </a>
+          <a href="#"> Haridwar </a>
+          <a href="#"> Leh </a>
+          <a href="#"> Pushkar </a>
+          <a href="#"> Rajkot </a>
+          <a href="#"> Madurai </a>
+          <a href="#"> Kozhikode </a>
+          <a href="#"> Alappuzha </a>
+          <a href="#"> Thrissur </a>
+          <a href="#"> Manipal </a>
+          <a href="#"> Vijayawada </a>
+          <a href="#"> Jodhpur </a>
+          <a href="#"> Kota </a>
+          <a href="#"> Ajmer </a>
+          <a href="#"> Mussoorie </a>
+          <a href="#"> Rishikesh </a>
+          <a href="#"> Jalandhar </a>
+          <a href="#"> Jammu </a>
+          <a href="#"> Manali </a>
+          <a href="#"> Dharamshala </a>
+          <a href="#"> See more </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- bottom-section -->
+
+  <footer>
+    <div class="footer-section">
+      <h1>Hungry+</h1>
+      <div class="btn-group">
+        <button class="btn dropdown-toggle" type="button" aria-xpanded="false">
+          <img src="./assets/india.png" alt="" width="18rem" />
+          India
+        </button>
+      </div>
+      <div class="btn-group">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-xpanded="false">
+          <i class="fas fa-globe"></i>
+          English
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="" class="dropdown-item">English</a></li>
+          <li><a href="" class="dropdown-item">Türkçe</a></li>
+          <li><a href="" class="dropdown-item">हिंदी</a></li>
+          <li><a href="" class="dropdown-item">Português (BR)</a></li>
+          <li><a href="" class="dropdown-item">Indonesian</a></li>
+          <li><a href="" class="dropdown-item">Português (PT)</a></li>
+          <li><a href="" class="dropdown-item">Español</a></li>
+          <li><a href="" class="dropdown-item">Čeština</a></li>
+          <li><a href="" class="dropdown-item">Slovenčina</a></li>
+          <li><a href="" class="dropdown-item">Polish</a></li>
+          <li><a href="" class="dropdown-item">Italian</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-section-links">
+      <ul>
+        <p>About Hungry+</p>
+        <a href="">Who We Are</a>
+        <a href="">Blog</a>
+        <a href="">Work With Us</a>
+        <a href="">Investor Relations</a>
+        <a href="">Report Fraud</a>
+        <a href="">Contact Us</a>
+      </ul>
+      <ul>
+        <p>HUNGERVERSE</p>
+        <a href="">Hungry+</a>
+        <a href="">Blinkit</a>
+        <a href="">Feeding India</a>
+        <a href="">Hyperpure</a>
+        <a href="">Hungerland</a>
+      </ul>
+      <ul>
+        <p>FOR RESTAURANTS</p>
+        <a href="">Partner With USs</a>
+        <a href="">Apps For You</a>
+      </ul>
+      <ul>
+        <p>LEARN MORE</p>
+        <a href="">Privacy</a>
+        <a href="">Security</a>
+        <a href="">Terms</a>
+        <a href="">Sitemap</a>
+      </ul>
+      <ul>
+        <p>SOCIAL LINKS</p>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <img src="./assets/play-store.webp" alt="" />
+        <img src="./assets/ios-store.webp" alt="" />
+      </ul>
+    </div>
+    <div class="hr-line"></div>
+
+    <div class="footer-bottom">
+      <p>
+        By continuing past this page, you agree to our Terms of Service,
+        Cookie Policy, Privacy Policy and Content Policies. All trademarks are
+        properties of their respective owners. 2008-2023 © Hungry+™ Ltd. All
+        rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- main js -->
+
+  <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

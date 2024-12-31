@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/online-order.css" />
+    <title>order-food-online</title>
+  </head>
+
+  <body>
+    <!-- header section -->
+    <div class="top">
+      <div class="container">
+        <a href="../index.html">
+          <h1>Hungry+</h1>
+        </a>
+        <div class="input-group fs-3 d-flex justify-content-center">
+          <i class="fa fa-solid fa-location-dot"></i>
+          <input
+            type="text"
+            class="form-control px-5 bg-white"
+            placeholder="Connaught Place, New Delhi"
+            id="location"
+          />
+
+          <i class="fa fa-caret-down"></i>
+
+          <i class="fa fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            class="form-control bg-white"
+            &#f124
+            placeholder=" Search for restaurant, cuisine or a dish"
+            id="search"
+          />
+        </div>
+      </div>
+      <div class="d-flex justify-content-end right-sec">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link cart px-4 btn btn-info" href="../cart/cart.html"> Order</a>
+          </li>
+        </ul>
+      </div>
+      <!--  header second-top-->
+      <section>
+        <nav class="nav">
+          <a href="../online-order.html" class="links"
+            ><img src="./assets/delivery.png" /><span>Delivery </span></a
+          >
+          <a href="../dining/dining.html"
+            ><img src="./assets/dining.png" /><span>Dining Out</span></a
+          >
+          <a href="../dining/dining.html"
+            ><img src="./assets/nightlife.webp" /><span>Nightlife </span></a
+          >
+        </nav>
+        <!-- filter section -->
+        <div class="frc">
+          <div class="filter">
+            <a href="#">
+              <img src="./assets/filter.png" alt="" width="20" />
+              <span>Filters</span>
+            </a>
+          </div>
+          <div class="rating">
+            <a href="#">Rating 4.0+</a>
+          </div>
+          <div class="cuisines">
+            <a href="" class=""
+              >Cuisines
+
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- order -->
+    <div class="order">
+      <div class="first-order">
+        <div class="order-section-heading">
+          <h3>Inspiration for your first order</h3>
+        </div>
+
+        <div class="carousel">
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/pizza.avif" alt="" />
+              <p>Pizza</p>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/Sandwich.avif" alt="" />
+              <p>Sandwich</p>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/Burger.avif" alt="" />
+              <p>Burger</p>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/Paratha.avif" alt="" />
+              <p>Paratha</p>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/Dosa.avif" alt="" />
+              <p>Dosa</p>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/Idli.avif" alt="" />
+              <p>Idli</p>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/cake.avif" alt="" />
+              <p>Cake</p>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/North.avif" alt="" />
+              <p>North Indian</p>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/thali.avif" alt="" />
+              <p>Thali</p>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/chole.avif" alt="" />
+              <p>Chole</p>
+              Bhature
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/chana.avif" alt="" />
+              <p>Chana</p>
+              Bhature
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="#"
+              ><img src="./assets/biryani.avif" alt="" />
+              <p>Biryani</p>
+            </a>
+          </div>
+        </div>
+        <div class="left-right">
+          <div class="backward">
+            <i class="fa fa-light fa-angle-left"></i>
+          </div>
+          <div class="forward">
+            <i class="fa fa-light fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main section  -->
+
+    <!-- coffee -->
+    <section class="main-section">
+      <div class="order-section">
+        <div>
+          <h3 class="ms-5 px-5">Coffee</h3>
+        </div>
+        <div class="delivery-section">
+          <div class="left-section">
+            <h3>Cappuccino with Masala Paneer</h3>
+            <span class="price">₹410</span>
+            <div class="left-section-content">
+              <p>
+                Serving size - 235ml/200gm, 499 kcal Allergen - Contains Milk,
+                Gluten. An average
+                <span class="hidden-text">
+                  active adult requires 2000 kcal energy per day, however,
+                  calorie needs may vary.
+                </span>
+              </p>
+              <button class="read-more" id="readMoreBtn">read more</button>
+            </div>
+          </div>
+          <div class="right-section">
+            <img
+              src="./assets/cappuccino-with-masala-panner.avif"
+              class="rounded"
+            />
+            <button class="add-btn" >Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="order-section">
+        <div class="delivery-section">
+          <div class="left-section">
+            <h3>Flat White and Croissant</h3>
+            <span class="price">₹369</span>
+            <div class="left-section-content">
+              <p>
+                Serving size - 355ml/90gm, 572 kcal Allergen - Contains Milk,
+                Gluten. An average
+                <span class="hidden-text">
+                  active adult requires 2000 kcal energy per day, however,
+                  calorie needs may vary.
+                </span>
+              </p>
+              <button class="read-more" id="readMoreBtn">read more</button>
+            </div>
+          </div>
+          <div class="right-section">
+            <img src="./assets/flat-white.avif" class="rounded" />
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="order-section">
+        <div class="delivery-section">
+          <div class="left-section">
+            <h3>Hot Chocolate</h3>
+            <span class="price">₹260</span>
+            <div class="left-section-content">
+              <p>
+                Snuggle up and indulge at home with our signature Hot
+                Chocolate.Size - 235/355/475/649
+                <span class="hidden-text">
+                  for Small/Reg/Med/Large & 221/275/380/509 Kcal respectively.
+                  Allergen contains - Milk. An average active adult requires
+                  2000 kcal energy per day.
+                </span>
+              </p>
+              <button class="read-more" id="readMoreBtn">read more</button>
+            </div>
+          </div>
+          <div class="right-section">
+            <img src="./assets/hot-chocolate.avif" class="rounded" />
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="order-section">
+        <div class="delivery-section">
+          <div class="left-section">
+            <h3>Mocha</h3>
+            <span class="price">₹265</span>
+            <div class="left-section-content">
+              <p>
+                An expert blend of chocolate milk and our Espresso for a
+                caffeinated chocolate
+                <span class="hidden-text">
+                  treat.Size - 235/355/475/649 for Small/Reg/Med/Large &
+                  147/214/267/321 Kcal respectively. Allergen contains - Milk.
+                  An average active adult requires 2000/day kcal energy.
+                </span>
+              </p>
+              <button class="read-more" id="readMoreBtn">read more</button>
+            </div>
+          </div>
+          <div class="right-section">
+            <img src="./assets/mocha.avif" class="rounded" />
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pizza -->
+    <section class="main-section">
+      <div class="order-section">
+        <div>
+          <h3 class="ms-5 px-5">Pizza</h3>
+        </div>
+        <div class="delivery-section">
+          <div class="left-section">
+            <h3>Schezwan Margherita - New</h3>
+            <span class="price">₹219</span>
+            <div class="left-section-content">
+              <p>
+                Serves 1 | Your very own Margherita, now with a spicy twist!
+                Loaded with our signature spicy schezwan sauce & 100% mozzarella
+                cheese
+              </p>
+            </div>
+          </div>
+          <div class="right-section">
+            <img
+              src="./assets/margherita pizza.webp"
+              width="130"
+              class="rounded"
+            />
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="order-section">
+        <div class="delivery-section">
+          <div class="left-section">
+            <h3>Paneer Pizza</h3>
+            <span class="price">₹130</span>
+            <div class="left-section-content">
+              <p>Fresh paneer with cheddar cheese</p>
+            </div>
+          </div>
+          <div class="right-section">
+            <img
+              src="./assets/panner spl-pizza.webp"
+              width="130"
+              class="rounded"
+            />
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-section">
+      <div class="order-section">
+        <div class="delivery-section">
+          <div class="left-section">
+            <h3>Chilly Willy Pizza</h3>
+            <span class="price">₹500</span>
+            <div class="left-section-content">
+              <p>
+                Pimento & Red Paprika Chilly with Jalapeno , Mushroom, asparagus
+                & roasted garlic
+              </p>
+            </div>
+          </div>
+          <div class="right-section">
+            <img src="./assets/pizza1.webp" width="130" class="rounded" />
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="footer-section">
+        <h1>Hungry+</h1>
+        <div class="btn-group">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            aria-xpanded="false"
+          >
+            <img src="../assets/india.png" alt="" width="18rem" />
+            India
+          </button>
+        </div>
+        <div class="btn-group">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-xpanded="false"
+          >
+            <i class="fas fa-globe"></i>
+            English
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="" class="dropdown-item">English</a></li>
+            <li><a href="" class="dropdown-item">Türkçe</a></li>
+            <li><a href="" class="dropdown-item">हिंदी</a></li>
+            <li><a href="" class="dropdown-item">Português (BR)</a></li>
+            <li><a href="" class="dropdown-item">Indonesian</a></li>
+            <li><a href="" class="dropdown-item">Português (PT)</a></li>
+            <li><a href="" class="dropdown-item">Español</a></li>
+            <li><a href="" class="dropdown-item">Čeština</a></li>
+            <li><a href="" class="dropdown-item">Slovenčina</a></li>
+            <li><a href="" class="dropdown-item">Polish</a></li>
+            <li><a href="" class="dropdown-item">Italian</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-section-links">
+        <ul>
+          <p>About Hungry+</p>
+          <a href="">Who We Are</a>
+          <a href="">Blog</a>
+          <a href="">Work With Us</a>
+          <a href="">Investor Relations</a>
+          <a href="">Report Fraud</a>
+          <a href="">Contact Us</a>
+        </ul>
+        <ul>
+          <p>HUNGERVERSE</p>
+          <a href="">Hungry+</a>
+          <a href="">Blinkit</a>
+          <a href="">Feeding India</a>
+          <a href="">Hyperpure</a>
+          <a href="">Hungerland</a>
+        </ul>
+        <ul>
+          <p>FOR RESTAURANTS</p>
+          <a href="">Partner With USs</a>
+          <a href="">Apps For You</a>
+        </ul>
+        <ul>
+          <p>LEARN MORE</p>
+          <a href="">Privacy</a>
+          <a href="">Security</a>
+          <a href="">Terms</a>
+          <a href="">Sitemap</a>
+        </ul>
+        <ul>
+          <p>SOCIAL LINKS</p>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <img src="../assets/play-store.webp" alt="" />
+          <img src="../assets/ios-store.webp" alt="" />
+        </ul>
+      </div>
+      <div class="hr-line"></div>
+
+      <div class="footer-bottom">
+        <p>
+          By continuing past this page, you agree to our Terms of Service,
+          Cookie Policy, Privacy Policy and Content Policies. All trademarks are
+          properties of their respective owners. 2008-2023 © Hungry+™ Ltd. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- js -->
+
+    <script src="../cart/cart.js"></script>
+    <script src="./online-order.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

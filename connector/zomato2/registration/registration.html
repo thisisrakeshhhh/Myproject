@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/registration.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="sign-up-form">
+        <div class="sign-up-cross">
+            <h4>Sign up</h4>
+            <span class="cross">&times</span>
+        </div>
+        <div class="input-text">
+            <input type="text" class="" name="fullName" id="fullName" placeholder="Full Name" required />
+            <input type="email" class="" name="email" id="emailid" placeholder="Email" required />
+        </div>
+
+        <div class="check">
+            <input type="checkbox" name="" id="checked" class="checkedbox" />
+            <span>I agree to Hungery+
+                <a href="">Terms of Service, Privacy Policy</a> and
+                <a href="">Content Policies</a>
+            </span>
+        </div>
+        <button class="btn btn-secondary createbtn" type="button" id="createBtn" onclick="createAccount()" disabled>
+            Create account
+        </button>
+        <div class="line">
+            <div class="hr-line"></div>
+            <span>or</span>
+            <div class="hr-line"></div>
+        </div>
+        <div class="google email-google">
+            <img src="../assets/google.png" alt="" width="23" />
+            <span>Continue with Google</span>
+        </div>
+        <div class="hr"></div>
+        <div class="sign-up-form-bottom">
+            <p>Already have an account?</p>
+            <a href="../login/login.html"> Log in</a>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="./registration.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

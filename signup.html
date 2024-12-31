@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <h1>Sign Up</h1>
+            <form id="signupForm" onsubmit="registerUser(event)">
+                <input type="email" placeholder="Email" required id="signup-email">
+                <input type="password" placeholder="Password" required id="signup-password">
+                <button type="submit">Create Account</button>
+            </form>
+            <p id="signup-message" style="color: green; display: none;">Account created successfully! You can now <a href="mainindex.html">log in</a>.</p>
+        </div>
+    </div>
+
+    <script>
+        function registerUser(event) {
+            event.preventDefault(); // Prevent traditional form submission
+
+            const email = document.getElementById("signup-email").value;
+            const password = document.getElementById("signup-password").value;
+
+            // Save the email and password to local storage
+            localStorage.setItem("userEmail", email);
+            localStorage.setItem("userPassword", password);
+
+            // Show a success message
+            const signupMessage = document.getElementById("signup-message");
+            signupMessage.style.display = "block";
+            console.log("User registered:", email);
+        }
+    </script>
+</body>
+</html>

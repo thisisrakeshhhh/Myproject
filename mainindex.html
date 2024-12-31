@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Splash Screen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="splash-screen">
+        <img src="attactmentlogo.png" alt="Netflix Logo" class="logo">
+    </div>
+    <div class="login-container" id="login-container">
+        <div class="login-box">
+            <h1>Sign In</h1>
+            <form action="/connector/index.html" method="POST" id="loginForm" onsubmit="redirectToAmazonClone(event)">
+                <input type="email" placeholder="Email or phone number" required name="email" id="email">
+                <input type="password" placeholder="Password" required name="password" id="password">
+                <button type="submit">Sign In</button>
+                <div class="support">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Need help?</a>
+                </div>
+            </form>
+            <div class="signup">
+                <p>New to Genie? <a href="signup.html">Sign up now</a>.</p>
+            </div>
+            <p id="error-message" style="color: red; display: none;">Invalid email or password. Please try again.</p>
+        </div>
+    </div>
+    <script>
+
+        // Define allowed email and password
+        const allowedEmail = "abc@123.com"; // Replace with the allowed email
+        const allowedPassword = "123"; // Replace with the allowed password
+
+        function redirectToAmazonClone(event) {
+            event.preventDefault(); // Prevent the form from submitting traditionally
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const errorMessage = document.getElementById("error-message");
+
+            // Check if email and password match allowed credentials
+            if (email === allowedEmail && password === allowedPassword) {
+                console.log("Redirecting to Amazon Clone...");
+
+                // Redirect to Amazon clone page
+                const redirectUrl = "./connector/index.html";
+                window.open(redirectUrl, "_blank");
+            } else {
+                // Show error message
+                errorMessage.style.display = "block";
+                console.log("Invalid email or password.");
+            }
+        }
+
+
+//         // Update allowed credentials to check local storage
+// function redirectToAmazonClone(event) {
+//     event.preventDefault(); // Prevent the form from submitting traditionally
+
+//     const email = document.getElementById("email").value;
+//     const password = document.getElementById("password").value;
+//     const errorMessage = document.getElementById("error-message");
+
+//     // Retrieve stored email and password from local storage
+//     const storedEmail = localStorage.getItem("userEmail");
+//     const storedPassword = localStorage.getItem("userPassword");
+
+//     // Check if email and password match stored credentials
+//     if (email === storedEmail && password === storedPassword) {
+//         console.log("Redirecting to Amazon Clone...");
+
+//         // Redirect to Amazon clone page
+//         const redirectUrl = "./connector/index.html";
+//         window.open(redirectUrl, "_blank");
+//     } else {
+//         // Show error message
+//         errorMessage.style.display = "block";
+//         console.log("Invalid email or password.");
+//     }
+// }
+
+
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

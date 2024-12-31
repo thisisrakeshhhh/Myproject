@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/dining.css" />
+
+    <title>Dining</title>
+  </head>
+
+  <body>
+    <div class="top">
+      <div class="container">
+        <a href="../index.html">
+          <h1>Hungry+</h1>
+        </a>
+        <div class="input-group fs-3 d-flex justify-content-center">
+          <i class="fa fa-solid fa-location-dot"></i>
+          <input
+            type="text"
+            class="form-control px-5 bg-white"
+            placeholder="Connaught Place, New Delhi"
+            id="location"
+          />
+
+          <i class="fa fa-caret-down"></i>
+
+          <i class="fa fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            class="form-control bg-white"
+            &#f124
+            placeholder=" Search for restaurant, cuisine or a dish"
+            id="search"
+          />
+        </div>
+      </div>
+      <div class="d-flex justify-content-end right-sec">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../login/login.html">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../registration/registration.html"
+              >Sign up</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--  header second-top-->
+      <section>
+        <nav class="nav">
+          <a href="../online-order/online-order.html" class="links"
+            ><img src="../online-order/assets/delivery.png" /><span>Delivery </span></a
+          >
+          <a href="../dining/dining.html"
+            ><img src="../online-order/assets/dining.png" /><span>Dining Out</span></a
+          >
+          <a href="../dining/dining.html"
+            ><img src="../online-order/assets/nightlife.webp" /><span
+              >Nightlife
+            </span></a
+          >
+        </nav>
+        <!-- collection -->
+
+        <div class="collection">
+          <h2 class="d-flex">Collections</h2>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="para text-muted">
+              Explore curated lists of top restaurants, cafes, pubs, and bars in
+              Delhi NCR, based on trends
+            </p>
+            <a href="#" class="text-danger d-flex align-items-center pb-2"
+              >All collections in Delhi NCR
+              <i class="fa-solid fa-caret-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="collection-cards d-flex ">
+          <div class="card">
+            <a href="">
+              <img src="../assets/places.avif" alt="" />
+              <div class="card-img-overlay">
+                <div class="position-absolute bottom-0 bottom-section">
+                  <p class="text-white collection-para">
+                    14 Places for Freedom Feastival
+                  </p>
+
+                  <div class="places-care text-white">
+                    <h6>14 Places</h6>
+                    <i class="fa-solid fa-caret-right"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="">
+              <img src="../assets/unique-dining.avif" alt="" />
+              <div class="card-img-overlay">
+                <div class="position-absolute bottom-0 bottom-section">
+                  <p class="text-white collection-para">
+                    10 Unique Dining Experiences
+                  </p>
+
+                  <div class="places-care text-white">
+                    <h6>10 Places</h6>
+                    <i class="fa-solid fa-caret-right"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="">
+              <img src="../assets/insta worthy.avif" alt="" />
+              <div class="card-img-overlay">
+                <div class="position-absolute bottom-0 bottom-section">
+                  <p class="text-white collection-para">
+                    21 Best Insta-worthy Places
+                  </p>
+
+                  <div class="places-care text-white">
+                    <h6>20 Places</h6>
+                    <i class="fa-solid fa-caret-right"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="">
+              <img
+                src="../assets/romantic-dining.avif"
+                alt=""
+                style="height: 288px"
+              />
+              <div class="card-img-overlay">
+                <div class="position-absolute bottom-0 bottom-section">
+                  <div>
+                    <p class="text-white collection-para">
+                      21 Romantic Dining Places
+                    </p>
+
+                    <div class="places-care text-white">
+                      <h6>19 Places</h6>
+                      <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- filter section -->
+        <div class="frc">
+          <div class="filter">
+            <a href="#">
+              <img src="../order/assets/filter.png" alt="" width="20" />
+              <span>Filters</span>
+            </a>
+          </div>
+          <div class="rating">
+            <a href="#">Rating 4.0+</a>
+          </div>
+          <div class="gold">
+            <a href="#"
+              ><img src="./assets/gold.webp" width="20" class="me-2" />Gold</a
+            >
+          </div>
+          <div class="seating">
+            <a href="#" class="">Outdoor Seating </a>
+          </div>
+          <div class="alcohol">
+            <a href="#" class="">Serves Alcohol</a>
+          </div>
+          <div class="open">
+            <a href="#" class="">Open Now</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- get-up-to -->
+    <div class="get">
+      <div class="get-up">
+        <img
+          src="./assets/get.avif"
+          class="img-fluid"
+          style="max-width: 91%; height: auto"
+        />
+      </div>
+    </div>
+
+    <!-- Trending dining restaurants  -->
+
+    <div class="restaurant">
+      <h3>Trending dining restaurants</h3>
+      <div class="row row-cols-2 row-cols-md-3 g-4" style="overflow-x: hidden;">
+        <div class="col">
+          <div class="card h-95" style="width: 25rem;">
+            <img src="./assets/bellagio.avif" alt="Bellagio" class="card-img-top" style="width: 25rem;"/>
+            <div class="card-body " style="width: 54vw;">
+              <h5 class="card-title">Bellagio</h5>
+              <div class="card-bottom info">
+
+                  <p class="card-text dish">
+                    European, Italian, Arabian, Mughlai, Modern Indian, Salad, Desserts  
+                </p>
+                <p class="card-text">₹3,000 for two</p>
+            </div>
+            <div class="mini-info info">
+                <p class="card-text">Sector 56, Gurgaon</p>
+                <p class="card-text km">25.6 km</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-95" style="width: 25rem;">
+            <img src="./assets/chido.avif" alt="Bellagio" class="card-img-top" style="width: 25rem;"/>
+            <div class="card-body " style="width: 54vw;">
+              <h5 class="card-title">Chido</h5>
+              <div class="card-bottom info">
+
+                  <p class="card-text dish">
+                    North Indian, Asian, Continental, Italian, Lebanese, Pizza, Beverages  
+                </p>
+                <p class="card-text">₹2,000 for two</p>
+            </div>
+            <div class="mini-info info">
+                <p class="card-text">Connaught Place, New Delhi</p>
+                <p class="card-text km">1.4 km</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-95" style="width: 25rem;">
+            <img src="./assets/connaught.avif" alt="Bellagio" class="card-img-top" style="width: 25rem;"/>
+            <div class="card-body " style="width: 54vw;">
+              <h5 class="card-title">Connaught Club House</h5>
+              <div class="card-bottom info">
+
+                  <p class="card-text dish">
+                    North Indian, Mughlai, Italian, Continental, Asian, Fast Food, Desserts
+                </p>
+                <p class="card-text">₹3,000 for two</p>
+            </div>
+            <div class="mini-info info">
+                <p class="card-text">Janpath, New Delhi</p>
+                <p class="card-text km">1 km</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-95" style="width: 25rem;">
+            <img src="./assets/ministry.avif" alt="ministry" class="card-img-top" style="width: 25rem;"/>
+            <div class="card-body " style="width: 54vw;">
+              <h5 class="card-title">Ministry Of Beer</h5>
+              <div class="card-bottom info">
+
+                  <p class="card-text dish">
+                    North Indian, Italian, Asian, Continental, Chinese, Beverages
+                </p>
+                <p class="card-text">₹2,800 for two</p>
+            </div>
+            <div class="mini-info info">
+                <p class="card-text">Connaught Place, New Delhi</p>
+                <p class="card-text km">1.5 km</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-95" style="width: 25rem;">
+            <img src="./assets/effingut.avif" alt="Bellagio" class="card-img-top" style="width: 25rem;"/>
+            <div class="card-body " style="width: 54vw;">
+              <h5 class="card-title">Effingut</h5>
+              <div class="card-bottom info">
+
+                  <p class="card-text dish">
+                    Mexican, Continental, North Indian, Beverages, Japanese, Pizza, Desserts  
+                </p>
+                <p class="card-text">₹3,000 for two</p>
+            </div>
+            <div class="mini-info info">
+                <p class="card-text">MGF Metropolitan Mall, Saket, New Delhi</p>
+                <p class="card-text km">25.6 km</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-95" style="width: 25rem;">
+            <img src="./assets/home.avif" alt="home" class="card-img-top" style="width: 25rem;"/>
+            <div class="card-body " style="width: 54vw;">
+              <h5 class="card-title">Home</h5>
+              <div class="card-bottom info">
+
+                  <p class="card-text dish">
+                    Modern Indian, European, Japanese, Desserts
+                </p>
+                <p class="card-text">₹4,500 for two</p>
+            </div>
+            <div class="mini-info info">
+                <p class="card-text">Ambience Mall, Vasant Kunj, New Delhi</p>
+                <p class="card-text km">10.9 km</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-95" style="width: 25rem;">
+            <img src="./assets/khubani.avif" alt="Bellagio" class="card-img-top" style="width: 25rem;"/>
+            <div class="card-body " style="width: 54vw;">
+              <h5 class="card-title">Khubani</h5>
+              <div class="card-bottom info">
+
+                  <p class="card-text dish">
+                    Mediterranean, Modern Indian, Middle Eastern, Asian, Italian, Desserts
+                </p>
+                <p class="card-text">₹3,500 for two</p>
+            </div>
+            <div class="mini-info info">
+                <p class="card-text">Aerocity, New Delhi</p>
+                <p class="card-text km">11.7 km</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-95" style="width: 25rem;">
+            <img src="./assets/1022.avif" alt="Bellagio" class="card-img-top" style="width: 25rem;"/>
+            <div class="card-body " style="width: 54vw;">
+              <h5 class="card-title">Ten Twenty Two - 1022</h5>
+              <div class="card-bottom info">
+
+                  <p class="card-text dish">
+                    European, Asian, Japanese, Pasta, Beverages, Desserts 
+                </p>
+                <p class="card-text">₹1,600 for two</p>
+            </div>
+            <div class="mini-info info">
+                <p class="card-text">DDA Market, New Delhi</p>
+                <p class="card-text km">9.4 km</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-95" style="width: 25rem;">
+            <img src="./assets/roesia.avif" alt="Bellagio" class="card-img-top" style="width: 25rem;"/>
+            <div class="card-body " style="width: 54vw;">
+              <h5 class="card-title">Roesia</h5>
+              <div class="card-bottom info">
+
+                  <p class="card-text dish">
+                    North Indian, Oriental, Italian, Desserts
+                </p>
+                <p class="card-text">₹3,000 for two</p>
+            </div>
+            <div class="mini-info info">
+                <p class="card-text">Sector 56, Gurgaon</p>
+                <p class="card-text km">30 km</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-section">
+        <h1>Hungry+</h1>
+        <div class="btn-group">
+          <button class="btn dropdown-toggle" type="button" aria-xpanded="false">
+            <img src="./assets/india.png" alt="" width="18rem" />
+            India
+          </button>
+        </div>
+        <div class="btn-group">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-xpanded="false">
+            <i class="fas fa-globe"></i>
+            English
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="" class="dropdown-item">English</a></li>
+            <li><a href="" class="dropdown-item">Türkçe</a></li>
+            <li><a href="" class="dropdown-item">हिंदी</a></li>
+            <li><a href="" class="dropdown-item">Português (BR)</a></li>
+            <li><a href="" class="dropdown-item">Indonesian</a></li>
+            <li><a href="" class="dropdown-item">Português (PT)</a></li>
+            <li><a href="" class="dropdown-item">Español</a></li>
+            <li><a href="" class="dropdown-item">Čeština</a></li>
+            <li><a href="" class="dropdown-item">Slovenčina</a></li>
+            <li><a href="" class="dropdown-item">Polish</a></li>
+            <li><a href="" class="dropdown-item">Italian</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-section-links">
+        <ul>
+          <p>About Hungry+</p>
+          <a href="">Who We Are</a>
+          <a href="">Blog</a>
+          <a href="">Work With Us</a>
+          <a href="">Investor Relations</a>
+          <a href="">Report Fraud</a>
+          <a href="">Contact Us</a>
+        </ul>
+        <ul>
+          <p>HUNGERVERSE</p>
+          <a href="">Hungry+</a>
+          <a href="">Blinkit</a>
+          <a href="">Feeding India</a>
+          <a href="">Hyperpure</a>
+          <a href="">Hungerland</a>
+        </ul>
+        <ul>
+          <p>FOR RESTAURANTS</p>
+          <a href="">Partner With USs</a>
+          <a href="">Apps For You</a>
+        </ul>
+        <ul>
+          <p>LEARN MORE</p>
+          <a href="">Privacy</a>
+          <a href="">Security</a>
+          <a href="">Terms</a>
+          <a href="">Sitemap</a>
+        </ul>
+        <ul>
+          <p>SOCIAL LINKS</p>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <img src="./assets/play-store.webp" alt="" />
+          <img src="./assets/ios-store.webp" alt="" />
+        </ul>
+      </div>
+      <div class="hr-line"></div>
+  
+      <div class="footer-bottom">
+        <p>
+          By continuing past this page, you agree to our Terms of Service,
+          Cookie Policy, Privacy Policy and Content Policies. All trademarks are
+          properties of their respective owners. 2008-2023 © Hungry+™ Ltd. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
